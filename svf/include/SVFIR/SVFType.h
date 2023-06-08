@@ -42,6 +42,8 @@
 #include <unordered_set>
 #include <vector>
 
+#include <cstdint>
+
 namespace SVF
 {
 class SVFType;
