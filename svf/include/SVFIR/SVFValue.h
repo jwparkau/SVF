@@ -256,7 +256,10 @@ public:
     }
 
     /// Needs to be implemented by a SVF front end
-    std::string toString() const;
+    std::string toString() const
+    {
+        return name;
+    }
 
     /// Overloading operator << for dumping ICFG node ID
     //@{
