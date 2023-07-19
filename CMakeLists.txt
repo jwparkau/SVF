@@ -14,6 +14,7 @@ set(CMAKE_CXX_EXTENSIONS ON)
 
 add_compile_options("-fno-rtti")
 add_compile_options("-fno-exceptions")
+add_compile_options("-fPIE")
 
 # Treat compiler warnings as errors
 add_compile_options("-Werror" "-Wall")
@@ -78,11 +79,11 @@ if(EXISTS "${PROJECT_SOURCE_DIR}/Test-Suite")
 endif()
 
 add_subdirectory(svf)
-add_subdirectory(svf-llvm)
+#add_subdirectory(svf-llvm)
 
 install(
   DIRECTORY ${PROJECT_SOURCE_DIR}/svf/include/
-            ${PROJECT_SOURCE_DIR}/svf-llvm/include/
+  #            ${PROJECT_SOURCE_DIR}/svf-llvm/include/
   COMPONENT devel
   DESTINATION include/svf
   FILES_MATCHING

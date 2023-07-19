@@ -224,7 +224,9 @@ mkdir "${BUILD_DIR}"
 cmake -D CMAKE_BUILD_TYPE:STRING="${BUILD_TYPE}" \
     -DSVF_ENABLE_ASSERTIONS:BOOL=true            \
     -DSVF_SANITIZE="${SVF_SANITIZER}"            \
-    -S "${SVFHOME}" -B "${BUILD_DIR}"
+    -S "${SVFHOME}" -B "${BUILD_DIR}"            \
+    -DCMAKE_EXPORT_COMPILE_COMMANDS=1            \
+    -DCMAKE_CXX_COMPILER="${LLVM_DIR}/bin/clang++"
 cmake --build "${BUILD_DIR}" -j ${jobs}
 
 ########
