@@ -276,6 +276,7 @@ class SVFFunction : public SVFValue
     friend class SVFIRWriter;
     friend class SVFIRReader;
     friend class SVFIRBuilder;
+    friend class X86_SVFLifter;
 
 public:
     typedef std::vector<const SVFBasicBlock*>::const_iterator const_iterator;
@@ -490,6 +491,7 @@ class SVFBasicBlock : public SVFValue
     friend class SVFIRWriter;
     friend class SVFIRReader;
     friend class SVFIRBuilder;
+    friend class X86_SVFLifter;
 
 public:
     typedef std::vector<const SVFInstruction*>::const_iterator const_iterator;

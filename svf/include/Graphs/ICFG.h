@@ -49,6 +49,7 @@ class ICFG : public GenericICFGTy
     friend class ICFGBuilder;
     friend class SVFIRWriter;
     friend class SVFIRReader;
+    friend class X86_SVFLifter;
 
 public:
 
