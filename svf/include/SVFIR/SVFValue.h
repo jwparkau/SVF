@@ -593,6 +593,7 @@ class SVFInstruction : public SVFValue
 {
     friend class SVFIRWriter;
     friend class SVFIRReader;
+    friend class X86_SVFLifter;
 public:
     typedef std::vector<const SVFInstruction*> InstVec;
 
