@@ -664,6 +664,7 @@ class SVFCallInst : public SVFInstruction
     friend class SVFIRReader;
     friend class LLVMModuleSet;
     friend class SVFIRBuilder;
+    friend class X86_SVFLifter;
 
 private:
     std::vector<const SVFValue*> args;
