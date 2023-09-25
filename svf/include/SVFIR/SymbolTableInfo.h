@@ -49,6 +49,7 @@ class SymbolTableInfo
     friend class SymbolTableBuilder;
     friend class SVFIRWriter;
     friend class SVFIRReader;
+    friend class X86_SVFLifter;
 
 public:
 
